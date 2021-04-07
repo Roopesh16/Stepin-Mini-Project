@@ -12,7 +12,7 @@
  - User can input new sudoku values and will output solution for it.
 
 ## SWOT Analysis
-![SWOT ANALYIS ](https://ibb.co/mJ4zrB9)
+![SWOT ANALYIS ](https://github.com/Roopesh16/Stepin-Mini-Project/blob/ac7f995781639321c7da096a3ea033e97ed3ebf3/.github/workflows/swot.png)
 
 # 4W's and 1'H
 ## Who:  
