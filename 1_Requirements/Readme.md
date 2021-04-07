@@ -36,5 +36,5 @@ A simple algorithm is used which has 2
 ## Low-Level Requirements
 |ID| Description | Status
 |--|--|--|
-|1| 
+|1| |
 
