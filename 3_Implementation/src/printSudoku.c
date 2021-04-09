@@ -1,16 +1,18 @@
 #include<stdio.h>
 #include "sudoku.h"
 
-void printSudoku(int *arr,int row,int col)
+int printSudoku(int *arr)
 {
-     for (int i = 0; i < row; i++)
+     for (int i = 0; i < 9; i++)
       {
-         for (int j = 0; j < col; j++)
+         for (int j = 0; j < 9; j++)
          {
-             printf("%d  ",*((arr+i*col) + j)); 
+             printf("%d  ",*((arr+i*9) + j)); 
          }            
         printf("\n");
        }
+
+       return 0;
 }
 
 

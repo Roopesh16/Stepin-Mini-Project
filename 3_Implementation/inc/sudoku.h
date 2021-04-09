@@ -12,21 +12,13 @@
 #ifndef __SUDOKU_H__
 #define __SUDOKU_H__
 
-/**
- * @param Row: FOR ROWS
- * @param Col : FOR COLUMNS 
- * @param r:For ROWS
- * @param c:For COLUMNS
- * 
- */
-
 
 /**
  * @brief Function to print Sudoku
  * 
  */
 
-void printSudoku(int *arr,int row,int col);
+int printSudoku(int *arr);
 
 /**
  * @brief Function to check if input value is valid
@@ -48,7 +40,7 @@ int solveSudoku(int *arr,int row, int col);
  * 
  */
 
-int inputSudoku(int *arr,int row,int col);
+int inputSudoku(int *arr);
 
 #endif
 

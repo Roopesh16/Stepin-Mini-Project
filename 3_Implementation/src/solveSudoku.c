@@ -1,3 +1,4 @@
+#include<stdio.h>
 #include "sudoku.h"
 
 /* Takes a partially filled-in grid and attempts
@@ -5,7 +6,7 @@ to assign values to all unassigned locations in
 such a way to meet the requirements for
 Sudoku solution (non-duplication across rows,
 columns, and boxes) */
-int solveSuduko(int *arr, int row, int col)
+int solveSuduko(int *arr,int row, int col)
 {
      
     // Check if we have reached the 8th row
