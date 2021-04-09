@@ -9,10 +9,10 @@ src\solveSudoku.c
 
 INC = inc
 
-$(PROJ_NAME) : $(SRC)
-	gcc -I $(INC) $(SRC) -o $(PROJ_NAME).exe
+#$(PROJ_NAME) : $(SRC)
+#	gcc -I $(INC) $(SRC) -o $(PROJ_NAME).exe
 
-run : $(PROJ_NAME)
-	$(PROJ_NAME)
+#run : $(PROJ_NAME)
+#	$(PROJ_NAME)
 
-clean: del /q *.exe
+#clean: del /q *.exe

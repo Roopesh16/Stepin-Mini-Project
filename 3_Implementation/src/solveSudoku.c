@@ -1,6 +1,9 @@
 #include<stdio.h>
 #include "sudoku.h"
 
+int (*SafeSudoku)(int *,int,int,int) = &safeSudoku;
+int (*SolveSud)(int *,int,int) = &solveSudoku;
+
 /* Takes a partially filled-in grid and attempts
 to assign values to all unassigned locations in
 such a way to meet the requirements for
@@ -15,7 +18,10 @@ int solveSuduko(int *arr,int row, int col)
     // returning true to avoid
     // further backtracking
     if (row == 8 && col == 9)
+    {
         return 1;
+    }
+        
  
     //  Check if column value  becomes 9 ,
     //  we move to next row and
@@ -30,15 +36,16 @@ int solveSuduko(int *arr,int row, int col)
     // of the grid already contains
     // value >0, we iterate for next column
     if (*arr > 0)
-        return solveSuduko(arr, row, col + 1);
- 
+    {
+        return SolveSud(arr, row, col + 1);
+    }
     for (int num = 1; num <= 9; num++) 
     {
          
         // Check if it is safe to place
         // the num (1-9)  in the
         // given row ,col  ->we move to next column
-        if (isSafe(arr, row, col, num)==1)
+        if (SafeSudoku(arr, row, col, num)==1)
         {
             /* assigning the num in the
                current (row,col)
@@ -50,8 +57,10 @@ int solveSuduko(int *arr,int row, int col)
            
             //  Checking for next possibility with next
             //  column
-            if (solveSuduko(arr, row, col + 1)==1)
+            if (SolveSud(arr, row, col + 1)==1)
+            {
                 return 1;
+            }
         }
        
         // Removing the assigned num ,

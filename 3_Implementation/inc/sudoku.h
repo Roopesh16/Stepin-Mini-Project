@@ -18,7 +18,7 @@
  * 
  */
 
-int printSudoku(int *arr);
+int printSudoku(int* arr);
 
 /**
  * @brief Function to check if input value is valid
@@ -26,21 +26,21 @@ int printSudoku(int *arr);
  * 
  */
 
-int safeSudoku(int *arr, int row, int col, int num);
+int safeSudoku(int* arr, int row, int col, int num);
 
 /**
  * @brief Function to solve Sudoku
  * 
  */
 
-int solveSudoku(int *arr,int row, int col);
+int solveSudoku(int* arr,int row, int col);
 
 /**
  * @brief Input new Sudoku
  * 
  */
 
-int inputSudoku(int *arr);
+int inputSudoku(int* arr);
 
 #endif
 
