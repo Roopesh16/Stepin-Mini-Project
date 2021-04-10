@@ -35,12 +35,6 @@ int safeSudoku(int* arr, int row, int col, int num);
 
 int solveSudoku(int* arr,int row, int col);
 
-/**
- * @brief Input new Sudoku
- * 
- */
-
-int inputSudoku(int* arr);
 
 #endif
 

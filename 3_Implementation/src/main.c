@@ -4,10 +4,6 @@
 
 #define N 9
 
-int (*PrintSudoku)(int *) = &printSudoku;
-int (*InputSudoku)(int *) = &inputSudoku;
-int (*SolveSud)(int *, int, int) = &solveSudoku;
-
 int main()
 {
     // 0 means unassigned cells
@@ -34,9 +30,9 @@ int main()
     }
     
     printf("\nBelow is the Solution\n\n");
-    if (SolveSud(grid, 0, 0)==1)
+    if (solveSudoku(grid, 0, 0)==1)
     {
-        PrintSudoku(grid);
+        printSudoku(grid);
     }
     else
     {
@@ -50,8 +46,28 @@ scanf("%d ",&a);
 
 switch(a)
 {
-    case 1: InputSudoku(newArr);
+    case 1: printf("\n -->ENTER BELOW YOUR OWN SUDOKU VALUES.<--\n NOTE: 1. Must be a 9X9 Sudoku.\n\t2. For empty spaces enter '0'.\n\t 3.The Gap while entering represents that value is being added to a new row.\n\n");
+
+    for(int i=0;i<9;i++){
+        for(int j=0;j<9;j++){
+            printf("  ");
+            scanf("%d",((newArr+i*9)+j));
+            printf("  ");
+        }
+        printf("\n");
+    }
+
+    printf("\nBelow is the Solution\n\n");
+    if (SolveSud(newArr, 0, 0)==1)
+    {
+        PrintSudoku(newArr);
+    }
+    else
+    {
+        printf("No solution exists\n");
+    }
             break;
+
     case 2: exit(1);
             break;
 }
