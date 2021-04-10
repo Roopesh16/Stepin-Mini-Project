@@ -5,6 +5,17 @@
  - This work is taken from [https://www.geeksforgeeks.org/sudoku-backtracking-7/](https://www.geeksforgeeks.org/sudoku-backtracking-7/) by **Pradeep Mondal P** and this is an improvement on it.
  - For this project, we require C Programming, makefile and Unit Testing using Unity.
  - Basic knowledge of Sudoku would be helpful to understand. One can try to build their own sudoku from [https://sudoku9x9.com/sudoku_blank_grid_9x9.php](https://sudoku9x9.com/sudoku_blank_grid_9x9.php)
+
+
+ ## Research
+
+Sudoku has been a popular puzzle game among kids, youngsters, older people. They are in newspapers, magazines, mobile games. The uniqueness of this game makes it so challenging and fun. I have been a fan of this game as a child, even now I like to play Sudoku once in a while and also tell other people about it.
+
+There wasn't much to research for the game, though for code, I had to look for best algorithms and found online mentioned in introduction. 
+
+### Benefits
+The benefit or the goal of this program is to make Sudoku more popular. It will give user an idea of the beauty of this game.
+ 
  
  ## Features
  
