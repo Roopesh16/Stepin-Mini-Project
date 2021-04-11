@@ -41,15 +41,15 @@ A simple algorithm is used which has 2
 ## High-Level Requirements
 |ID| Description | Status
 |--|--|--|
-| 1 | Contan sample and take User Sudoku | Working 
-|2| Print the solution if exist | 
+| HL1 | Contan sample and take User Sudoku | Working 
+| HL2 | Print the solution if exist | 
 
 ## Low-Level Requirements
 |ID| Description | Status
 |--|--|--|
-|1| Sample and User sudoku in main() |
-|2| Call to solveSudoku() | 
-|3| Check sudoku using safeSudoku() before solving |
-|4| solveSudoku() self call to fill the empty spaces |
-|5| Then print the solution, if exist |
+| LL1 | Sample and User sudoku in main() |
+| LL2 | Call to solveSudoku() | 
+| LL3 | Check sudoku using safeSudoku() before solving |
+| LL4 | solveSudoku() self call to fill the empty spaces |
+| LL5 | Then print the solution, if exist |
 
