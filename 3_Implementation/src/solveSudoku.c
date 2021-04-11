@@ -1,3 +1,14 @@
+/**
+ * @file solveSudoku.c
+ * @author Roopesh Verma
+ * @brief Function to solve the sudoku
+ * @version 0.1
+ * @date 2021-04-11
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
+
 #include<stdio.h>
 #include "sudoku.h"
 

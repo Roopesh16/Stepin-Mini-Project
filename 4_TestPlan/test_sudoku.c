@@ -1,3 +1,14 @@
+/**
+ * @file test_sudoku.c
+ * @author Roopesh Verma
+ * @brief Test all the functions made for the program
+ * @version 0.1
+ * @date 2021-04-11
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
+
 #include "sudoku.h"
 #include "unity.h"
 
