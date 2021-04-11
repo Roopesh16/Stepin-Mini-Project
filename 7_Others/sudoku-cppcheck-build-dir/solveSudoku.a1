@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="903247223">
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="solveSuduko" lineNumber="21"/>
+    <functioncall functionName="arr"/>
+    <functioncall functionName="col"/>
+    <functioncall functionName="for"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="num"/>
+    <functioncall functionName="row"/>
+    <functioncall functionName="safeSudoku"/>
+    <functioncall functionName="solveSudoku"/>
+  </FileInfo>
+</analyzerinfo>

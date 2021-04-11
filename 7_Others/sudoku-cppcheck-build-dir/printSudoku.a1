@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="567825980">
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="printSudoku" lineNumber="15"/>
+    <functioncall functionName="for"/>
+    <functioncall functionName="j"/>
+    <functioncall functionName="printf"/>
+  </FileInfo>
+</analyzerinfo>

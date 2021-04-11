@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="3467011195">
+        <error id="unreadVariable" severity="style" msg="Variable &apos;startRow&apos; is assigned a value that is never used." verbose="Variable &apos;startRow&apos; is assigned a value that is never used." cwe="563">
+            <location file0="3_Implementation\src\safeSudoku.c" file="3_Implementation\src\safeSudoku.c" line="44" column="18"/>
+            <symbol>startRow</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;startCol&apos; is assigned a value that is never used." verbose="Variable &apos;startCol&apos; is assigned a value that is never used." cwe="563">
+            <location file0="3_Implementation\src\safeSudoku.c" file="3_Implementation\src\safeSudoku.c" line="45" column="27"/>
+            <symbol>startCol</symbol>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="safeSudoku" lineNumber="15"/>
+    <functioncall functionName="for"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="j"/>
+  </FileInfo>
+</analyzerinfo>

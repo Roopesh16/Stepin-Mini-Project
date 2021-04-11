@@ -1,0 +1,1 @@
+main call:[PrintSudoku,SolveSud,exit,printSudoku,printf,scanf,solveSudoku] noreturn:[PrintSudoku,printSudoku,printf]

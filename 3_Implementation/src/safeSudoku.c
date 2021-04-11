@@ -48,7 +48,7 @@ int safeSudoku(int *arr,int row,int col,int num)
     {
         for (int j = 0; j < 3; j++)
         {
-            if (*((arr+i*3)+j) == num)
+            if (*((arr+[i+startRow]*3)+[j+startCol]) == num)
             {
                 return 0;
             }

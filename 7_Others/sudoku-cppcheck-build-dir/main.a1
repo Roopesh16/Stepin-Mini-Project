@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="2217217707">
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="main" lineNumber="18"/>
+    <functioncall functionName="PrintSudoku"/>
+    <functioncall functionName="SolveSud"/>
+    <functioncall functionName="a"/>
+    <functioncall functionName="break"/>
+    <functioncall functionName="exit"/>
+    <functioncall functionName="for"/>
+    <functioncall functionName="grid"/>
+    <functioncall functionName="i"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="j"/>
+    <functioncall functionName="newArr"/>
+    <functioncall functionName="printSudoku"/>
+    <functioncall functionName="printf"/>
+    <functioncall functionName="scanf"/>
+    <functioncall functionName="solveSudoku"/>
+    <functioncall functionName="switch"/>
+  </FileInfo>
+</analyzerinfo>
