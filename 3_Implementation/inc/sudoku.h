@@ -16,6 +16,7 @@
 /**
  * @brief Function to print Sudoku
  * 
+ * @param arr Sudoku Grid Passed
  */
 
 int printSudoku(int* arr);
@@ -24,12 +25,21 @@ int printSudoku(int* arr);
  * @brief Function to check if input value is valid
  * and move to next column and rows.
  * 
+ * @param arr Sudoku Grid
+ * @param row Row of sudoku
+ * @param col Column of sudoku
+ * @param num Number to be checked and added
  */
 
 int safeSudoku(int* arr, int row, int col, int num);
 
 /**
  * @brief Function to solve Sudoku
+ * 
+ * @param arr Sudoku Grid
+ * @param row Row of sudoku
+ * @param col Column of sudoku
+ * @
  * 
  */
 
