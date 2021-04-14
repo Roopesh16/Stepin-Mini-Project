@@ -2,8 +2,7 @@
 
 ## Build
 
-[![CI](https://github.com/Roopesh16/Stepin-Mini-Project/actions/workflows/cppcheck.yml/badge.svg)](https://github.com/Roopesh16/Stepin-Mini-Project/actions/workflows/cppcheck.yml) [![GitHub issues](https://img.shields.io/github/issues/Roopesh16/Stepin-Mini-Project?style=plastic)](https://github.com/Roopesh16/Stepin-Mini-Project/issues) [!Code Quality](https://img.shields.io/badge/code%20quality-B-green)
-
+[![CI](https://github.com/Roopesh16/Stepin-Mini-Project/actions/workflows/cppcheck.yml/badge.svg)](https://github.com/Roopesh16/Stepin-Mini-Project/actions/workflows/cppcheck.yml) [![GitHub issues](https://img.shields.io/github/issues/Roopesh16/Stepin-Mini-Project?style=plastic)](https://github.com/Roopesh16/Stepin-Mini-Project/issues) 
 
 This project is Sudoku Game. A sample sudoku is given in the code and the game prints the solution. It will ask the user to input a sudoku and will print it's solution. This project is taken from [https://www.geeksforgeeks.org/sudoku-backtracking-7/](https://www.geeksforgeeks.org/sudoku-backtracking-7/) by **Pradeep Mondal P** and this is an improvement on it.
 
