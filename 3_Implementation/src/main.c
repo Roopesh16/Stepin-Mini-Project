@@ -62,7 +62,7 @@ switch(a)
     for(int i=0;i<9;i++){
         for(int j=0;j<9;j++){
             printf("  ");
-            scanf("%d",((newArr+i*9)+j));
+            scanf("%d",newArr[i][j]);
             printf("  ");
         }
         printf("\n");

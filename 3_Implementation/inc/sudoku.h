@@ -19,7 +19,7 @@
  * @param arr Sudoku Grid Passed
  */
 
-int printSudoku(int* arr);
+int printSudoku(int arr[9][9]);
 
 /**
  * @brief Function to check if input value is valid
@@ -31,7 +31,7 @@ int printSudoku(int* arr);
  * @param num Number to be checked and added
  */
 
-int safeSudoku(int* arr, int row, int col, int num);
+int safeSudoku(int arr[9][9], int row, int col, int num);
 
 /**
  * @brief Function to solve Sudoku
@@ -43,7 +43,7 @@ int safeSudoku(int* arr, int row, int col, int num);
  * 
  */
 
-int solveSudoku(int* arr,int row, int col);
+int solveSudoku(int arr[9][9],int row, int col);
 
 
 #endif

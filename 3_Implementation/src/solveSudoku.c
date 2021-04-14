@@ -18,7 +18,7 @@ to assign values to all unassigned locations in
 such a way to meet the requirements for
 Sudoku solution (non-duplication across rows,
 columns, and boxes) */
-int solveSuduko(int *arr,int row, int col)
+int solveSuduko(int arr[9][9],int row, int col)
 {
      
     // Check if we have reached the 8th row
@@ -44,7 +44,7 @@ int solveSuduko(int *arr,int row, int col)
     // Check if the current position
     // of the grid already contains
     // value >0, we iterate for next column
-    if (*arr > 0)
+    if (arr[row][col] > 0)
     {
         return solveSudoku(arr, row, col + 1);
     }
@@ -62,7 +62,7 @@ int solveSuduko(int *arr,int row, int col)
                and assuming our assined num
                in the position
                is correct     */
-            *arr = num;
+            arr[row][col] = num;
            
             //  Checking for next possibility with next
             //  column
@@ -77,7 +77,7 @@ int solveSuduko(int *arr,int row, int col)
         // was wrong , and we go for next
         // assumption with
         // diff num value
-        *arr = 0;
+        arr[row][col] = 0;
     }
     return 0;
 }

@@ -12,29 +12,27 @@
 #include<stdio.h>
 #include "sudoku.h"
 
-int safeSudoku(int *arr,int row,int col,int num)
+int safeSudoku(int arr[9][9],int row,int col,int num)
 {
      
     // Check if we find the same num
     // in the similar row , we return 0
     for (int x = 0; x <= 8; x++)
     {
-        if (*(arr+x*col++) == num)
+        if (arr[row][x] == num)
         {
            return 0;
-        }
-        row++;            
+        }         
     }
         
     // Check if we find the same num in the
     // similar column , we return 0
     for (int x = 0; x <= 8; x++)
     {
-         if (*(arr+x*row++) == num)
+         if (arr[x][col] == num)
          {
              return 0;
          }
-         col++; 
     }
        
             
@@ -48,7 +46,7 @@ int safeSudoku(int *arr,int row,int col,int num)
     {
         for (int j = 0; j < 3; j++)
         {
-            if (*((arr+[i+startRow]*3)+[j+startCol]) == num)
+            if (arr[i+startRow][j+startCol] == num)
             {
                 return 0;
             }
