@@ -6,7 +6,6 @@ BUILD_DIR = Build
 
 SRC = src\main.c\
 src\printSudoku.c\
-src\inputSudoku.c\
 src\safeSudoku.c\
 src\solveSudoku.c
 
@@ -32,7 +31,7 @@ all:$(BUILD_DIR)
 	gcc $(SRC) $(INC) -o $(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$(EXEC))
 
 run: all
-	$(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$n(EXEC))
+	$(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$(EXEC))
 
 doc:
 	make -C doc
