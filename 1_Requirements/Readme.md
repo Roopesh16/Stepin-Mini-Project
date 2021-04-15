@@ -17,7 +17,11 @@ There wasn't much to research for the game, though for code, I had to look for b
 The benefit or the goal of this program is to make Sudoku more popular. It will give user an idea of the beauty of this game.
  
  
- ## Features
+ ## Cost and Features
+
+ No cost required to play the game.
+
+   **Features**
  
  - Solve a sudoku problem.
  - User can input new sudoku values and will output solution for it.
@@ -35,7 +39,7 @@ It is made as a part of LTTS Step-in Mini Project work.
 ## Where:
 It's made using Visual Studio Code IDE on Windows 10.
 ## How:
-A simple algorithm is used which has 2 
+A simple algorithm is used which has a sample sudoku and can take input from user and give the result.
 
 # Detail Requirements
 ## High-Level Requirements
