@@ -42,6 +42,7 @@ It's made using Visual Studio Code IDE on Windows 10.
 A simple algorithm is used which has a sample sudoku and can take input from user and give the result.
 
 # Detail Requirements
+
 ## High-Level Requirements
 |ID| Description | Status
 |--|--|--|
