@@ -9,9 +9,9 @@
  * 
  */
 
-#include<stdio.h>
-#include<stdlib.h>
-#include "sudoku.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <sudoku.h>
 
 #define N 9
 
@@ -69,9 +69,9 @@ switch(a)
     }
 
     printf("\nBelow is the Solution\n\n");
-    if (SolveSud(newArr, 0, 0)==1)
+    if (solveSudoku(newArr, 0, 0)==1)
     {
-        PrintSudoku(newArr);
+        printSudoku(newArr);
     }
     else
     {

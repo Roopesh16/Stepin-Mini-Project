@@ -3,13 +3,16 @@ PROJ_NAME = Sudoku
 
 BUILD_DIR = Build
 
+TEST_SRC = test_sudoku.c\
+unity/unity.c
 
-SRC = src\main.c\
-src\printSudoku.c\
-src\safeSudoku.c\
-src\solveSudoku.c
 
-INC = -Iinc
+SRC = src/printSudoku.c\
+src/safeSudoku.c\
+src/solveSudoku.c
+
+INC = -Iinc\
+-Iunity
 
 
 
@@ -28,10 +31,21 @@ endif
 .PHONY : all run clean doc
 
 all:$(BUILD_DIR)
-	gcc $(SRC) $(INC) -o $(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$(EXEC))
+	gcc main.c $(SRC) $(INC) -o $(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$(EXEC))
 
 run: all
 	$(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$(EXEC))
+
+test: $(SRC) $(TEST_SRC)
+	gcc $^ $(INC) -o $(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
+	$(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
+
+coverage:${PROJECT_NAME}
+	gcc -fprofile-arcs -ftest-coverage $(SRC) $(INC) -o $(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
+	$(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
+	gcov -a $(SRC)
+
+
 
 doc:
 	make -C doc
