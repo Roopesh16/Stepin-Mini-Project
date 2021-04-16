@@ -50,38 +50,39 @@ int main()
         printf("No solution exists\n");
     }
 
-printf("To enter your Sudoku, enter 1. \n To exit,enter 2\n\n");
+printf("\nTo enter your Sudoku, enter 1. \n To exit,enter 2\n\n");
 
 int a, newArr[N][N];
-scanf("%d ",&a);
+scanf("%d",&a);
 
-switch(a)
+if(a==1)
 {
-    case 1: printf("\n -->ENTER BELOW YOUR OWN SUDOKU VALUES.<--\n NOTE: 1. Must be a 9X9 Sudoku.\n\t2. For empty spaces enter '0'.\n\t 3.The Gap while entering represents that value is being added to a new row.\n\n");
+   printf("\n\n -->ENTER BELOW YOUR OWN SUDOKU VALUES.<--\n NOTE: 1. Must be a 9X9 Sudoku.\n\t2. For empty spaces enter '0'.\n\t 3.The Gap while entering represents that value is being added to a new row.\n\n");
 
-    for(int i=0;i<9;i++){
-        for(int j=0;j<9;j++){
-            printf("  ");
-            scanf("%d",newArr[i][j]);
-            printf("  ");
-        }
-        printf("\n");
-    }
+            for(int i=0;i<9;i++){
+                for(int j=0;j<9;j++){
+                  printf("  ");
+                  scanf("%d",newArr[i][j]);
+                  printf("  ");
+                }
+            printf("\n");
+            }
 
-    printf("\nBelow is the Solution\n\n");
-    if (solveSudoku(newArr, 0, 0)==1)
-    {
-        printSudoku(newArr);
-    }
-    else
-    {
-        printf("No solution exists\n");
-    }
-            break;
-
-    case 2: exit(1);
-            break;
-}
+            printf("\nBelow is the Solution\n\n");
+            if (solveSudoku(newArr, 0, 0)==1)
+            {
+              printSudoku(newArr);
+            }
+            else
+            {
+              printf("No solution exists\n");
+            }
+}            
+            
+   else if(a==2)
+   {
+       exit(1);           
+   }
 
 printf("\t\tTHANK YOU");
 
